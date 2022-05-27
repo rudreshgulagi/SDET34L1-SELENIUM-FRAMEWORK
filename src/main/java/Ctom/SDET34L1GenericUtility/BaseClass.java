@@ -19,7 +19,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 public static WebDriver staticdriver;
 /**
- * this class contains all the common testscripthj
+ * this class contains all the common testscript
+ * 
  */
 	public JavaUtility jutil;
 	public String userName;
