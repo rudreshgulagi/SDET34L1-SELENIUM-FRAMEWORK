@@ -49,9 +49,9 @@ public static WebDriver staticdriver;
 	/**
 	 * this method is used to fetch the data from the property file, launch thhe browser and navigate the application
 	 */
-	 @Parameters("browser")
+	// @Parameters("browser")
 	@BeforeClass(groups="BaseClass")
-	public  void beforeClassTest(String browser)
+	public  void beforeClassTest( )
 	{
 	 jutil = new JavaUtility();
 	String url = FileUtilities.getDataFromPropertyFile("url");
@@ -60,7 +60,7 @@ public static WebDriver staticdriver;
 	//userName=System.getProperty("USERNAME");
 	password = FileUtilities.getDataFromPropertyFile("password");
 	//password=System.getProperty("PASSWORD");
-   // String browser = FileUtilities.getDataFromPropertyFile("browser");
+     String browser = FileUtilities.getDataFromPropertyFile("browser");
 	longTimeOut=JavaUtility.stringTOLong(timeout);
 	randomNumber=jutil.getRandomNumber(2000);
 	switch (browser) {
