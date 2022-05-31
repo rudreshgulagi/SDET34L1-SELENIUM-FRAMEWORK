@@ -11,6 +11,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import Com.vtiger.pomRepository.HomePage;
 import Com.vtiger.pomRepository.LoginPage;
@@ -48,9 +49,9 @@ public static WebDriver staticdriver;
 	/**
 	 * this method is used to fetch the data from the property file, launch thhe browser and navigate the application
 	 */
-	// @Parameters("browser")
+	 @Parameters("browser")
 	@BeforeClass(groups="BaseClass")
-	public  void beforeClassTest()
+	public  void beforeClassTest(String browser)
 	{
 	 jutil = new JavaUtility();
 	String url = FileUtilities.getDataFromPropertyFile("url");
@@ -59,7 +60,7 @@ public static WebDriver staticdriver;
 	//userName=System.getProperty("USERNAME");
 	password = FileUtilities.getDataFromPropertyFile("password");
 	//password=System.getProperty("PASSWORD");
-    String browser = FileUtilities.getDataFromPropertyFile("browser");
+   // String browser = FileUtilities.getDataFromPropertyFile("browser");
 	longTimeOut=JavaUtility.stringTOLong(timeout);
 	randomNumber=jutil.getRandomNumber(2000);
 	switch (browser) {
