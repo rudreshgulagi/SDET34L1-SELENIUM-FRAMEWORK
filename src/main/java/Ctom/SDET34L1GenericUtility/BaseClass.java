@@ -58,8 +58,7 @@ public static WebDriver staticdriver;
 	userName = FileUtilities.getDataFromPropertyFile("username");
 	//userName=System.getProperty("USERNAME");
 	password = FileUtilities.getDataFromPropertyFile("password");
-	//
-	password=System.getProperty("PASSWORD");
+	//password=System.getProperty("PASSWORD");
     String browser = FileUtilities.getDataFromPropertyFile("browser");
 	longTimeOut=JavaUtility.stringTOLong(timeout);
 	randomNumber=jutil.getRandomNumber(2000);
