@@ -29,7 +29,7 @@ public static void openPropertyFile(String filepath) throws IOException {
 public static String getDataFromPropertyFile(String key) {
 	String value=property.getProperty(key);
 	return value;
-	
+//hiiii	
 }
 
 }
