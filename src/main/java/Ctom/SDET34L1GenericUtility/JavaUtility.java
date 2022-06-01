@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
  * @author rudresh
  *
  */
+//COMMENTED
 public class JavaUtility {
 /**
  * This method is used to Convert String value to long datatype
