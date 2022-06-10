@@ -17,6 +17,9 @@ public class CreateNewOrganizationPage {
 	@FindBy(name=("button"))
 	private WebElement SaveBtn;
 	
+	@FindBy(xpath="//input[@class='txtBox']")
+	private WebElement SearchNameTxt;
+	
 	
 	
 	public CreateNewOrganizationPage(WebDriver driver) {
@@ -35,8 +38,13 @@ public class CreateNewOrganizationPage {
 
 	public void clickOnCreateOrganization() {
 		CreateOrganizationBtn.click();
-		
+			
+		}
+	public void enterSearchName(String organization_name) {
+		SearchNameTxt.sendKeys(organization_name);	
 	}
 		
 	}
+		
+	
 	

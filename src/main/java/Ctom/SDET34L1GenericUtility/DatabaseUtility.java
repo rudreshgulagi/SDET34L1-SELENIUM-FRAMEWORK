@@ -36,6 +36,7 @@ public static void openDBConnection(String dburl,String dbUserName,String dbPass
 	
 }
 /**
+
  * This method is used to fetch the data from database/to do the DQL actionson database
  * @param query
  * @param columnName
